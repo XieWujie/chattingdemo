@@ -49,8 +49,6 @@
             </intent-filter>
         </receiver>
         <!-- 即时通讯模块、推送 END -->
-        <!-- 反馈组件（需要加入以下声明）START -->
-        <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" />
         <service android:name="com.amap.api.location.APSService"></service>
         <activity
             android:name=".view.activity.RegisteredActivity"

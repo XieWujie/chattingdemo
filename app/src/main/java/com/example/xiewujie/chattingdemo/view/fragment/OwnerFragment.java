@@ -107,7 +107,7 @@ public class OwnerFragment extends Fragment implements View.OnClickListener {
             case R.id.chang_header:
                dispatchPictureIntent(PIC_HEADER);
                 break;
-            case R.id.setting:
+            case R.id.change_data:
                 Intent intent = new Intent(mContext, EditDataActivity.class);
                 startActivity(intent);
                 break;
