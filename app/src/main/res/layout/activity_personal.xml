@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.PersonalActivity">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/personal_collapsing_toolbar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    android:layout_height="?attr/actionBarSize">
+                    <LinearLayout
+                        android:id="@+id/personal_back_layout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/personal_back_view"
+                            android:layout_width="25dp"
+                            android:src="@drawable/chat_back"
+                            android:layout_height="25dp" />
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="返回"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </android.support.v7.widget.Toolbar>
+                <ImageView
+                    android:id="@+id/personal_background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/personal_user_header_view"
+                    android:layout_marginTop="190dp"
+                    android:layout_width="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="60dp" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/personal_message"/>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#f9f9f9"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+       <android.support.v7.widget.CardView
+           android:layout_width="0dp"
+           android:background="#FFFFFF"
+           android:layout_marginRight="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/add_to_friend"
+               android:text="加为好友"
+               android:textSize="14sp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/send_message"
+                android:text="发消息"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="#1eb9f2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".view.activity.EditDataActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#ff5CACFC"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:id="@+id/edit_back_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/edit_back_view"
+                android:layout_width="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_back"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/edit_back_text"
+                android:layout_marginLeft="5dp"
+                android:text="取消"
+                android:layout_marginStart="35dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/edit_ensure"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="确定"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:text="昵称"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/nick_name_edit"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#33999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/gender_choose_text"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:text="性别"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:id="@+id/gender_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:background="#33999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:text="家乡"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/home_choose"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:background="@null"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#33999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:text="年龄"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/age_edit"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#33999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/owner_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <FrameLayout
+        android:layout_below="@+id/owner_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/personal_message" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/chang_header"
+                android:text="更换头像"
+                android:textSize="12sp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/change_background"
+                android:text="更换背景"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:background="#FFFFFF"
+                android:id="@+id/change_data"
+                android:textSize="12sp"
+                android:text="编辑资料"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/setting"
+                android:textSize="14sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/user_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</RelativeLayout>
